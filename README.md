@@ -1,7 +1,11 @@
 # polybar-netease-cloud-music
+
 polybar modules for netease-cloud-music
 
+![polybar-netease-cloud-music](./screenshot.png)
+
 # modules
+
 ```
 [module/netease-cloud-music-previous]
 type = custom/text
