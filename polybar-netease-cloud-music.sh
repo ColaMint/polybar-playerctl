@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 DEST="org.mpris.MediaPlayer2.netease-cloud-music"
 OBJECT_PATH="/org/mpris/MediaPlayer2"
 DESKTOP_PATH="/usr/share/applications/netease-cloud-music.desktop"
@@ -12,7 +11,6 @@ is_running() {
         return 1
     fi
 }
-
 
 is_playing() {
     if dbus-send --print-reply --dest=$DEST $OBJECT_PATH org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'PlaybackStatus' 2>&1 | grep Playing > /dev/null; then
