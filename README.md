@@ -29,3 +29,5 @@ interval = 1
 exec = /path/to/polybar-netease-cloud-music.sh title || echo 启动网易云音乐
 click-left = /path/to/polybar-netease-cloud-music.sh launch
 ```
+
+If the desktop file for Netease Cloud Music is not located in `/usr/share/applications/netease-cloud-music.desktop`, please modify the `DESKTOP_PATH` in `polybar-netease-cloud-music.sh` on your own.
