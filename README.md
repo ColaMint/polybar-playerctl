@@ -2,7 +2,7 @@
 
 polybar modules for playerctl
 
-![polybar-netease-cloud-music](./screenshot.png)
+![polybar-playerctl](./screenshot.png)
 
 # modules
 
@@ -21,13 +21,13 @@ click-left = /path/to/polybar-playerctl.sh next
 type = custom/script
 interval = 1
 exec = /path/to/polybar-playerctl.sh is-playing && echo '' || echo ''
-click-left = /path/to/polybar-netease-cloud-music.sh play-pause
+click-left = /path/to/polybar-playerctl.sh play-pause
 
 [module/playerctl-title]
 type = custom/script
 interval = 1
 exec = /path/to/polybar-playerctl.sh title || echo '启动播放器'
-click-left = /path/to/polybar-netease-cloud-music.sh launch
+click-left = /path/to/polybar-playerctl.sh launch
 ```
 
 please modify the `PLAYER` and `DESKTOP` in `polybar-playerctl.sh` on your own.
